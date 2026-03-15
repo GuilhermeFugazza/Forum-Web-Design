@@ -1,0 +1,70 @@
+:root {
+  --fundo: #f8fafc;
+  --texto: #0f172a;
+  --borda: #dbe3ee;
+  --link: #67a5ff;
+  --hover: #dbeafe;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 28px;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  color: var(--texto);
+  background: var(--fundo);
+}
+
+.conteudo {
+  width: min(980px, 100%);
+}
+
+header h1 {
+  margin: 0 0 8px;
+}
+
+header p {
+  margin: 0 0 30px;
+  color: #475569;
+}
+
+.bloco {
+  margin-bottom: 26px;
+}
+
+.bloco h2 {
+  margin: 0 0 12px;
+}
+
+.paginacao {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+}
+
+.paginacao > .item + .item {
+  margin-left: -1px;
+}
+
+.paginacao > .item > a {
+  display: inline-block;
+  min-width: 58px;
+  padding: 14px 0;
+  text-align: center;
+  border: 1px solid var(--borda);
+  text-decoration: none;
+  color: var(--link);
+  font-weight: 700;
+  background: #ffffff;
+}
+
+.hover-demo > .item > a:hover {
+  background: var(--hover);
+}
