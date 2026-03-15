@@ -1,0 +1,90 @@
+:root {
+  --fundo: #f8fafc;
+  --texto: #0f172a;
+  --cor-1: #0369a1;
+  --cor-2: #166534;
+  --cor-3: #7c2d12;
+  --card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  color: var(--texto);
+  background: linear-gradient(135deg, #dbeafe 0%, #f8fafc 35%, #e2e8f0 100%);
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.pagina-links {
+  width: min(980px, 100%);
+  background: var(--card);
+  border-radius: 18px;
+  padding: 26px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1);
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 8px 0 24px;
+  color: #475569;
+}
+
+.bloco-lista h2 {
+  margin-top: 0;
+}
+
+.lista-atividades {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.lista-atividades > li {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+}
+
+.item .data {
+  display: inline-block;
+  min-width: 108px;
+  font-weight: 700;
+}
+
+.lista-atividades > .atividade-um a {
+  color: var(--cor-1);
+}
+
+.lista-atividades > .atividade-dois a {
+  color: var(--cor-2);
+}
+
+.lista-atividades > .atividade-tres a {
+  color: var(--cor-3);
+}
+
+.lista-atividades li + li {
+  margin-top: 4px;
+}
+
+.item a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.item a:hover {
+  text-decoration: underline;
+}
